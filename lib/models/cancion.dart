@@ -4,14 +4,12 @@ class Cancion {
   final String artista;
   final String album;
   final String imagen;
-  final String archivo; 
 
-  Cancion({
+  const Cancion({
     required this.id,
     required this.nombre,
     required this.artista,
     required this.album,
     required this.imagen,
-    required this.archivo,
   });
 }
