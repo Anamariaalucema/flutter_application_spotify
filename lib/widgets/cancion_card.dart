@@ -31,18 +31,18 @@ class CancionCard extends StatelessWidget {
               Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
-                  child: Image.asset(
+                child: Image.network(
                     cancion.imagen,
-                    width: 95,
-                    height: 95,
+                    width: double.infinity,
+                    height: 140,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
-                        width: 95,
-                        height: 95,
+                        width: double.infinity,
+                        height: 140,
                         alignment: Alignment.center,
                         color: Colors.grey.shade300,
-                        child: const Icon(Icons.image_not_supported, size: 28),
+                        child: const Icon(Icons.image_not_supported, size: 48),
                       );
                     },
                   ),

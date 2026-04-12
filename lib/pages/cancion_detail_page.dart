@@ -55,7 +55,7 @@ class _CancionDetailPageState extends State<CancionDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
+            Image.network(
               cancion.imagen,
               width: double.infinity,
               height: 240,
