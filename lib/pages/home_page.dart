@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     // Misma URL base que en el ejemplo, pero con el sufijo /canciones
     _service = const CancionService(
-      baseUrl: ' https://dummyjson.com/c/6049-967a-42f9-94f9',
+      baseUrl: 'https://dummyjson.com/c/6049-967a-42f9-94f9',
       usarFallbackLocal: true,
     );
     _futureCanciones = _service.obtenerCanciones();
